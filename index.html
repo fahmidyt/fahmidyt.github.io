@@ -1,5 +1,160 @@
-<html>
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home</title>
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <link rel="stylesheet" href="assets/css/bootstrap.min.css">
+    <link rel="stylesheet" href="assets/css/main.css">
+</head>
+
 <body>
-<h1>ini index </h1>
+    <header>
+        <nav class="navbar navbar-expand-lg sticky" id="navbar">
+            <div class="container">
+
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navitems"
+                    aria-controls="navitems" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <div class="collapse navbar-collapse" id="navitems">
+                    <ul class="nav-link navbar-nav">
+                        <li>
+                            <a href="#profile">Profile</a>
+                        </li>
+                    </ul>
+                    <ul class="nav-link navbar-nav ml-auto">
+                        <li>
+                            <a href="#work-experiences">Works</a>
+                        </li>
+                        <li>
+                            <a href="#">Contact</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+
+        </nav>
+    </header>
+
+    <main>
+        <div id="profile">
+            <div class="container">
+                <img src="assets/images/Luthfi.png" id="luthfi" alt="luthfi">
+                <div class="introduce">
+                    <div class="left">
+                        <h5 data-aos="fade-right" data-aos-duration="950">Hi, im</h5>
+                        <h1 data-aos="fade-right" data-aos-duration="950" data-aos-delay="300">Luthfi</h1>
+                        <h1 data-aos="fade-right" data-aos-duration="950" data-aos-delay="600">Fajrian</h1>
+                    </div>
+                    <div class="right" data-aos="fade-left" data-aos-duration="1250">
+                        <h5 data-aos="fade-left" data-aos-duration="1250">Graphic Designer</h5>
+                        <h5 data-aos="fade-left" data-aos-duration="1250" data-aos-delay="150">Since 2017</h5>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div id="second-tab">
+            <div class="container">
+                <div class="title">
+                    <h1>About Me |</h1>
+                </div>
+                <div class="content">
+                    <p>My name <span class="text-medium">Luthfi Fajrian</span></p>
+                    <p>i lived in <span class="text-medium">East Jakarta, Indonesia.</span></p>
+                    <p>Im proudly to be an Professional</p>
+                    <p class="mb-4"><span class="text-medium">Graphic Designer</span></p>
+                    <p>Please check my <span class="text-medium">Curriculum Vitae</span></p>
+                    <p class="mb-4">Down below, to know more about me.</p>
+                    <button class="btn btn-primary btn-block">DOWNLOAD CV</button>
+                </div>
+            </div>
+        </div>
+
+        <div id="work-experiences">
+            <div class="container">
+                <h1 class="title" data-aos="fade-up" data-aos-duration="1000">Work Experiences</h1>
+
+                <div class="work-container">
+                    <div class="work-item" data-aos="fade-right" data-aos-duration="1000">
+                        <h2>Moonlightthink</h2>
+                        <h4>2015 - 2015</h4>
+
+                        <p>I work at Moonlighthink Communication as Graphic Designer Intern for helping team with project
+                            Annual Report</p>
+                    </div>
+                    <div class="work-item" data-aos="fade-right" data-aos-duration="1000" data-aos-delay="150">
+                        <h2>Designcub3</h2>
+                        <h4>2017 - 2019</h4>
+
+                        <p>I work at Designcub3
+                            as Senior Graphic Designer
+                            to handle as Person In Charge for
+                            many clients brief.</p>
+                    </div>
+                    <div class="work-item" data-aos="fade-right" data-aos-duration="1000" data-aos-delay="100">
+                        <h2>Biogreen Science</h2>
+                        <h4>2019 - Now</h4>
+
+                        <p>I work at Biogreen Science
+                            as Graphic Designer
+                            to handle project design company including Digital Content, Website Design, Product Design,
+                            & Bos Needed.</p>
+                    </div>
+                    <div class="work-item" data-aos="fade-right" data-aos-duration="1000" data-aos-delay="200">
+                        <h2>Hydrococo</h2>
+                        <h4>2019 - Now</h4>
+
+                        <p>I work at Hydrococo Team
+                            as Freelance Graphic Designer
+                            to helps design in ATL Project, & Social Media Team.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div id="latest-work">
+            <div class="container">
+                <h1 class="title" data-aos="fade-up" data-aos-duration="1000">My Latest Work</h1>
+
+                <div class="latest-container">
+                    <div class="latest-item" data-aos="fade-right">
+                        <img src="" alt="image">
+                    </div>
+                    <div class="latest-item" data-aos="fade-right">
+                        <h2>Hydrococo</h2>
+                        <h4>2019 - Now</h4>
+
+                        <p>I work at Hydrococo Team
+                            as Freelance Graphic Designer
+                            to helps design in ATL Project, & Social Media Team.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+    </main>
+
+    <!-- SCRIPT -->
+    <script src="assets/js/jquery.min.js"></script>
+    <script src="assets/js/bootstrap.min.js"></script>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+        AOS.init();
+
+        window.onscroll = function () {
+            var navbar = document.getElementById('navbar');
+            var sticky = navbar.offsetTop;
+
+            if (window.pageYOffset > sticky) navbar.classList.add('fixed');
+            else navbar.classList.remove('fixed');
+        }
+    </script>
 </body>
+
 </html>
